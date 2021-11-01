@@ -8,12 +8,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bd.css" />
+      <link rel="stylesheet" href="css/all.css" />
+       <link rel="stylesheet" href="css/fontawesome.min.css" />
     <title>Bartosz Dejnarowicz- Trener Personalny</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
     <link>
+   
   </head>
   <body>
     <!-- header starts -->
@@ -26,8 +29,8 @@
           <li><a href="#footer">Kontakt</a></li>
         </ul>
       </nav>
-      <div><i class="bi bi-list"></i></div>
-
+       <div><i class="bi bi-list"></i></div>
+   
 
       <div class="logo">
         <a href="https://www.facebook.com/bartek.dejnarowicz.1"
@@ -140,12 +143,12 @@
   $(document).ready(function(){
 
     $('.bi-list').click(function(){
-      $(this).toggleClass('.bi-x-lg');
+      $(this).toggleClass('bi-x-lg');
       $('nav').toggleClass('nav-toggle');
     });
 
     $('nav ul li a').click(function(){
-      $('.fa-bars').removeClass('.bi-x-lg');
+      $('.bi-list').removeClass('bi-x-lg');
       $('nav').removeClass('nav-toggle');
     });
 
