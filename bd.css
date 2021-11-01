@@ -30,6 +30,14 @@ header {
   padding: 2rem 3rem;
   z-index: 1;
 }
+header .bi-list {
+  font-size: 5rem;
+  color: #ffc107;
+  cursor: pointer;
+  margin: 0 2rem;
+  z-index: 20;
+  display: none;
+}
 
 nav ul li {
   list-style: none;
@@ -336,6 +344,15 @@ header .logo a h1 span {
   font-size: 3rem;
   color: #ffc107;
 }
+.bi-x-lg {
+  transform: rotateZ(180deg);
+}
+
+.active {
+  background: #333;
+  box-shadow: 0 0.1rem 0.3rem #000;
+  padding: 1rem;
+}
 
 @keyframes slider {
   0% {
@@ -378,7 +395,7 @@ header .logo a h1 span {
     font-size: 4rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   html {
     font-size: 80%;
   }
@@ -387,7 +404,7 @@ header .logo a h1 span {
     font-size: 3.5rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   html {
     font-size: 60%;
   }
@@ -423,7 +440,7 @@ header .logo a h1 span {
 }
 
 @media (max-width: 620px) {
-  header .bi-bars {
+  header .bi-list {
     display: block;
   }
   header nav {
@@ -477,13 +494,31 @@ header .logo a h1 span {
   html {
     font-size: 50%;
   }
+  @media (max-width: 500px) {
+    html {
+      font-size: 40%;
+    }
+    .title {
+      height: 10%;
+      font-size: 2.9rem;
+    }
+  }
 }
-@media (max-width: 350px) {
+@media (max-width: 360px) {
+  html {
+    font-size: 33%;
+  }
+  .title {
+    height: 10%;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 280px) {
   html {
     font-size: 28%;
   }
   .title {
     height: 10%;
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
